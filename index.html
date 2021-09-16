@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sana Food - Здоровое питание никогда не было проще!</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Sana Food - Здоровое питание никогда не было проще!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img src="img/icon.png" alt="SanaFood лого" class="logo"
+      /></a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li><a href="#" class="navigation__link">Как это работает</a></li>
+          <li><a href="#" class="navigation__link">Меню</a></li>
+          <li><a href="#" class="navigation__link">Отзывы</a></li>
+          <li><a href="#" class="navigation__link">Планы</a></li>
+          <li class="navigation__cta">
+            <div class="navigation__contact">
+              <div class="navigation__phone-number">
+                <i class="navigation__icon icon-basic-headset"></i>
+                <p>8(444)555-555</p>
+              </div>
+              <div class="navigation__phone-text">
+                <a href="#" class="navigation__phone-link">Перезвоните мне</a>
+              </div>
+            </div>
+            <a href="#" class="btn btn--green">Попробуй!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="section-hero">
+        <div class="container grid grid--2-cols hero">
+          <div class="hero__text-box">
+            <h1 class="heading-primary">
+              Вкусная и полезная еда с доставкой на дом каждый день
+            </h1>
+            <p class="paragraph">
+              Подписка на годовой план обеспечит вас здоровой и вкусной едой на
+              365 дней. Каждое блюдо подобранно с учетом ваших предпочтений и
+              выбраной программы питания.
+            </p>
+            <a href="#" class="btn btn--orange margin-right--sm">Заказать</a>
+            <a href="#" class="btn btn--white-outline">Расскажите мне все &dArr;</a>
+            <div class="hero__delivered-meals">
+              <div class="hero__delivered-imgs">
+                <img src="img/customers/customer-1.jpg" alt="Клиент 1" />
+                <img src="img/customers/customer-2.jpg" alt="Клиент 2" />
+                <img src="img/customers/customer-3.jpg" alt="Клиент 3" />
+                <img src="img/customers/customer-4.jpg" alt="Клиент 4" />
+                <img src="img/customers/customer-5.jpg" alt="Клиент 5" />
+                <img src="img/customers/customer-6.jpg" alt="Клиент 6" />
+              </div>
+              <p class="hero__delivered-text">
+                <span>100,000+</span> заказов выполнено за прошлый год!
+              </p>
+            </div>
+          </div>
+          <div class="hero__img-box">
+            <img
+              src="img/hero.png"
+              alt="Три картинки, на которыз изображенна вкусная едаю"
+              class="hero__img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
