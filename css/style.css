@@ -9,7 +9,7 @@
   background-color: rgb(70, 155, 125, 0.1);
 
   /* Because we want header to be sticky later */
-  height: 12.8rem;
+  height: 11rem;
   padding: 0 4.8rem 0 0;
   position: relative;
 }
@@ -75,23 +75,8 @@
   align-self: flex-end;
 }
 
-.navigation__phone-link:link,
-.navigation__phone-link:visited {
-  color: #469b7d;
-  font-size: 1.3rem;
-  font-weight: 400;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  transition: all 0.3s;
-}
-
-.navigation__phone-link:hover,
-.navigation__phone-link:active {
-  color: #3f8c71;
-}
-
 /* *********************************** */
-/* NAVIGATION */
+/* HERO */
 /* *********************************** */
 
 .hero {
@@ -103,8 +88,17 @@
   padding: 4.8rem 0 9.6rem 0;
 }
 
+.heading-primary--right-move-in {
+  display: block;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary--left-move-in {
+  display: block;
+  animation: moveInRight 1s ease-out;
+}
+
 .hero__text-box .paragraph {
-  line-height: 1.6;
   margin-bottom: 4.8rem;
 }
 
@@ -137,10 +131,280 @@
 }
 
 .hero__delivered-text span {
-  color: #DF5C0C;
+  color: #df5c0c;
   font-weight: 700;
 }
 
 .hero__img {
   width: 110%;
+}
+
+.btn--bottom-move-in {
+  animation: moveInBottom 0.5s ease-out 0.3s;
+  animation-fill-mode: backwards;
+}
+
+/* *********************************** */
+/* SECTION-HOW */
+/* *********************************** */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-text-box__number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-text-box__description.paragraph {
+  font-size: 1.8rem;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  padding-bottom: 65%;
+  border-radius: 50%;
+  background-color: #7eb9a4;
+  box-shadow: inset 0 0 0 3rem #c8e1d8;
+  transition: all 0.3s;
+}
+
+.step-img-box::after {
+  height: 100%;
+  border-radius: 9px;
+  background-color: #469b7d;
+  opacity: 0.3;
+}
+
+.step-img-box__img {
+  position: relative;
+  width: 65%;
+  border-radius: 9px;
+}
+
+.step-img-box:hover::before,
+.step-text-box:hover + .step-img-box::before {
+  width: 70%;
+  padding-bottom: 70%;
+}
+
+/* *********************************** */
+/* SECTION-MEALS */
+/* *********************************** */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+/* FUCTIONALITY */
+.meal {
+  height: 50rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+.meal__side {
+  height: 50rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: all 0.8s ease;
+}
+
+.meal__side--front {
+  background-color: #fff;
+}
+
+.meal__side--back {
+  background-image: linear-gradient(to right bottom, #fcefe7, #ec9d6d);
+  transform: rotateY(180deg);
+}
+
+.meal:hover .meal__side--front {
+  transform: rotateY(180deg);
+}
+
+.meal:hover .meal__side--back {
+  transform: rotateY(0);
+}
+
+/* STYLING */
+.meal__img {
+  width: 100%;
+}
+
+.meal__content {
+  padding: 1.2rem 2.4rem 4.8rem 4.8rem;
+}
+
+.meal__tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--keto {
+  background-color: #eb3b3b;
+}
+
+.tag--dukan {
+  background-color: #fd911a;
+}
+
+.meal__title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5.6rem;
+}
+
+.meal__attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal__attribute {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.meal__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.meal__description {
+  position: relative;
+  padding: 4.8rem 3.6rem 4.8rem 4.8rem;
+}
+
+.meal__about {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 5.6rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.all-recipes {
+  margin-top: -3.2rem;
+  text-align: center;
+}
+
+/* *********************************** */
+/* SECTION-TESTIMONIALS */
+/* *********************************** */
+.section-testimonials {
+  padding: 9.6rem 0;
+  background-color: rgb(70, 155, 125, 0.1);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  align-items: center;
+}
+
+.testimonials-collection {
+  display: grid;
+  column-gap: 3.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.testimonial__img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial__text {
+  margin-bottom: 2.4rem;
+}
+
+.testimonial__name {
+  text-align: right;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery__item img:hover {
+  transform: scale(1.1);
 }
