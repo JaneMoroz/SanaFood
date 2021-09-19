@@ -323,6 +323,7 @@
 
 .meal__about {
   font-size: 1.8rem;
+  font-weight: 500;
   line-height: 1.6;
   margin-bottom: 5.6rem;
 }
@@ -331,7 +332,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .list-item {
@@ -352,20 +353,23 @@
 /* SECTION-TESTIMONIALS */
 /* *********************************** */
 .section-testimonials {
-  padding: 9.6rem 0;
+  padding: 2.4rem 0;
   background-color: rgb(70, 155, 125, 0.1);
+  position: relative;
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: 60fr 40fr;
+  grid-template-columns: 55fr 45fr;
+  column-gap: 4.8rem;
   align-items: center;
 }
 
 .testimonials-collection {
   display: grid;
-  column-gap: 3.6rem;
+  column-gap: 4.8rem;
   grid-template-columns: repeat(2, 1fr);
+  margin-right: 4.8rem;
 }
 
 .testimonial {
@@ -388,10 +392,39 @@
   text-align: right;
 }
 
+.pagination {
+  display: flex;
+  gap: 1.2rem;
+
+  position: absolute;
+  bottom: 7%;
+  left: 26%;
+}
+
+.pagination-link:link,
+.pagination-link:visited {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #469b7d;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.pagination-link--side-left.pagination-link:hover,
+.pagination-link--side-left.pagination-link:active,
+.pagination-link--side-right.pagination-link:hover,
+.pagination-link--side-right.pagination-link:active {
+  background-color: #3f8c71;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
+  column-gap: 4.8rem;
+  row-gap: 3.2rem;
   padding: 1.6rem;
 }
 
@@ -407,4 +440,271 @@
 
 .gallery__item img:hover {
   transform: scale(1.1);
+}
+
+/* *********************************** */
+/* SECTION-PRICES */
+/* *********************************** */
+
+.section-prices {
+  padding: 9.6rem 0;
+}
+
+.section-prices__grid-gap {
+  column-gap: 12.8rem-;
+}
+
+.price-plan {
+  border-radius: 11px;
+  width: 70%;
+  padding: 6.4rem 3.2rem 6.4rem 3.2rem;
+}
+
+.price-plan--break {
+  justify-self: end;
+  border: 2px solid #df5c0c;
+}
+
+.price-plan--rest {
+  background-color: rgb(223, 92, 12, 0.2);
+}
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.plan-header__name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #df5c0c;
+  margin-bottom: 2.4rem;
+}
+
+.plan-header__price {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.plan-header__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.price-plan__sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: -3.2rem;
+}
+
+.features {
+  padding: 8rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  gap: 1.6rem;
+  border-radius: 11px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 3.6rem 2.4rem 3.6rem 2.4rem;
+  cursor: default;
+  transition: all 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.feature__icon {
+  color: #df5c0c;
+  font-size: 6rem;
+}
+
+.feature__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.feature__text {
+  font-size: 1.5rem;
+}
+
+/* *********************************** */
+/* SECTION-CTA */
+/* *********************************** */
+
+.section-cta {
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.video__content {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100rem;
+  margin: 0 auto;
+  padding: 4.8rem 8rem;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 11px;
+}
+
+.cta .heading-secondary {
+  width: 75%;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 3.2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: rgb(70, 155, 125, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(218, 235, 229, 0.3);
+}
+
+.cta-form__btn {
+  margin-top: 3.2rem;
+  align-self: center;
+  justify-self: center;
+  grid-column: span 2;
+}
+
+/* *********************************** */
+/* FOOTER */
+/* *********************************** */
+
+.footer {
+  padding: 4.8rem;
+  overflow: hidden;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.footer-grid {
+  display: grid;
+  column-gap: 30rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__navigation {
+  justify-self: end;
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+}
+
+.footer__list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  transform: scale(1.1);
+  color: #df5c0c;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 0.6rem;
+  width: 30rem;
+}
+
+.footer__text {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer__social-link:link,
+.footer__social-link:visited {
+  display: inline-block;
+  background-color: #df5c0c;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.footer__social-link:hover,
+.footer__social-link:active {
+  transform: scale(1.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.footer__social-link ion-icon {
+  color: #fff;
+  height: 1.6rem;
+  width: 1.6rem;
 }

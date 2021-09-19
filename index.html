@@ -36,7 +36,7 @@
                 <p>8(444)555-555</p>
               </div>
               <div class="navigation__phone-text">
-                <a href="#" class="text-link text-link--green"
+                <a href="#" class="text-link text-link--green text-link--small"
                   >Перезвоните мне</a
                 >
               </div>
@@ -279,13 +279,18 @@
         </div>
 
         <div class="container all-recipes">
-          <a href="#" class="text-link text-link--orange"
+          <a href="#" class="text-link text-link--orange text-link--medium"
             >Посмотреть все рецепты &rarr;</a
           >
         </div>
       </section>
 
       <section class="section-testimonials">
+        <div class="pagination">
+          <a href="#" class="pagination-link pagination-link--side-left"></a>
+          <a href="#" class="pagination-link"></a>
+          <a href="#" class="pagination-link pagination-link--side-right"></a>
+        </div>
         <div class="container testimonials-grid">
           <div class="testimonials">
             <span class="subheading">Отзывы</span>
@@ -377,6 +382,209 @@
           </div>
         </div>
       </section>
+
+      <section class="section-prices">
+        <div class="container">
+          <span class="subheading">Планы</span>
+          <h2 class="heading-secondary">Дешевле, чем питаться в кафе</h2>
+          <div class="grid grid--2-cols section-prices__grid-gap">
+            <div class="price-plan price-plan--break">
+              <header class="plan-header">
+                <p class="plan-header__name">брейк тайм</p>
+                <p class="plan-header__price">&8381 7,000</p>
+                <p class="plan-header__text">в месяц. это всего 235 в день.</p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i
+                  ><span>Одно полноценное блюдо в день</span>
+                </li>
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i>
+                  <span>Десерт или снек в дополнение</span>
+                </li>
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i
+                  ><span>Смузи на выбор</span>
+                </li>
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i
+                  ><span>Доставка с 11 утра до 5 вечера</span>
+                </li>
+              </ul>
+              <div class="price-plan__sign-up">
+                <a href="#" class="btn btn--orange">Начать сегодня</a>
+              </div>
+            </div>
+
+            <div class="price-plan price-plan--rest">
+              <header class="plan-header">
+                <p class="plan-header__name">рест тайм</p>
+                <p class="plan-header__price">&8381 13,000</p>
+                <p class="plan-header__text">в месяц. это всего 430 в день.</p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i
+                  ><span>Два полноценных блюда в день</span>
+                </li>
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i>
+                  <span>Два десерта или снека на выбор</span>
+                </li>
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i
+                  ><span>Смузи на выбор </span>
+                </li>
+                <li class="list-item">
+                  <i class="meal__icon icon-basic-star"></i
+                  ><span>Доставка 24/7</span>
+                </li>
+              </ul>
+              <div class="price-plan__sign-up">
+                <a href="#" class="btn btn--orange">Начать сегодня</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="plan-details">
+            С любым выбранным планном вы получите:
+          </aside>
+
+          <div class="container grid grid--4-cols features">
+            <div class="feature">
+              <i class="feature__icon icon-basic-clock"></i>
+              <p class="feature__title">Экономия времени</p>
+              <p class="feature__text">
+                С нами вам не нужно готовить, а только насладиться едой!
+              </p>
+            </div>
+            <div class="feature">
+              <i class="feature__icon icon-basic-spread-text"></i>
+              <p class="feature__title">Большое меню</p>
+              <p class="feature__text">
+                Огромное и разнообразное меню. Выбор за Вами!
+              </p>
+            </div>
+            <div class="feature">
+              <i class="feature__icon icon-basic-heart"></i>
+              <p class="feature__title">Полезная еда</p>
+              <p class="feature__text">
+                Мы используем только качественные и свежие продукты.
+              </p>
+            </div>
+            <div class="feature">
+              <i class="feature__icon icon-basic-geolocalize-05"></i>
+              <p class="feature__title">Быстрая доставка</p>
+              <p class="feature__text">
+                Быстрая и бесплатная доставка до 50 км от МКАД
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="video">
+          <video class="video__content" autoplay muted loop>
+            <source src="img/video/video.mp4" type="video/mp4" />
+            <source src="img/video/video.webm" type="video/webm" />
+            Ваш браузер не поддерживает проигравание видео!
+          </video>
+        </div>
+
+        <div class="cta">
+          <h2 class="heading-secondary">
+            Не решились? Попробуйте
+            <span class="heading-secondary__accent">пробный</span> день
+            программы Брейк Тайм
+            <span class="heading-secondary__accent">бесплатно</span>!
+          </h2>
+          <form action="#" class="cta-form">
+            <div>
+              <label for="first-name">Имя</label>
+              <input id="first-name" type="text" placeholder="Иван" required />
+            </div>
+            <div>
+              <label for="email">Адрес электронной почты</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="email@mail.ru"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone">Телефон</label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="(945)1234567"
+                required
+              />
+            </div>
+            <div>
+              <label for="address">Адрес доставки</label>
+              <input
+                id="address"
+                type="text"
+                placeholder="улица, номер дома, номер квартиры"
+                required
+              />
+            </div>
+            <div class="cta-form__btn">
+              <a href="#" class="btn btn--green">Заказать</a>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer container">
+      <div class="footer__logo">
+        <a href="#"
+          ><img src="img/icon.png" alt="SanaFood лого" class="logo"
+        /></a>
+      </div>
+      <div class="footer-grid">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li>
+              <a href="" class="footer__link">О НАС</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">УСЛОВИЯ</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">КОНТАКТЫ</a>
+            </li>
+            <li>
+              <a href="" class="footer__link">ОФЕРТА</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <p class="footer__text">ПОДПИСЫВАЙТЕСЬ НА НАС:</p>
+          <a href="#" class="footer__social-link"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
