@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <title>Sana Food - Здоровое питание никогда не было проще!</title>
   </head>
@@ -32,7 +33,7 @@
           <li class="navigation__cta">
             <div class="navigation__contact">
               <div class="navigation__phone-number">
-                <i class="navigation__icon icon-basic-headset"></i>
+                <i class="icon-headset icon-basic-headset"></i>
                 <p>8(444)555-555</p>
               </div>
               <div class="navigation__phone-text">
@@ -45,11 +46,21 @@
           </li>
         </ul>
       </nav>
+
+      <div class="navigation__button">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+        <label for="navi-toggle" class="navigation__button"
+          ><span class="navigation__icon"> &nbsp; </span></label
+        >
+
+        <div class="navigation__background">&nbsp;</div>
+      </div>
     </header>
 
     <main>
       <section class="section-hero">
-        <div class="container grid grid--2-cols hero">
+        <div class="container hero">
           <div class="hero__text-box">
             <h1 class="heading-primary">
               <span class="heading-primary--right-move-in"
@@ -202,7 +213,9 @@
                   домашними кето-булочками — это новый взгляд на любимую
                   классику! И конечно же нельзя забывать про бекон...
                 </p>
-                <a href="#" class="btn btn--orange margin-left--md">Заказать</a>
+                <div class="meal__btn">
+                  <a href="#" class="btn btn--orange">Заказать</a>
+                </div>
               </div>
             </div>
           </div>
@@ -239,7 +252,9 @@
                   идеально описывают данное блюдо. И это чудо исполнено в лучших
                   карибских традициях.
                 </p>
-                <a href="#" class="btn btn--orange margin-left--md">Заказать</a>
+                <div class="meal__btn">
+                  <a href="#" class="btn btn--orange">Заказать</a>
+                </div>
               </div>
             </div>
           </div>
@@ -286,11 +301,6 @@
       </section>
 
       <section class="section-testimonials">
-        <div class="pagination">
-          <a href="#" class="pagination-link pagination-link--side-left"></a>
-          <a href="#" class="pagination-link"></a>
-          <a href="#" class="pagination-link pagination-link--side-right"></a>
-        </div>
         <div class="container testimonials-grid">
           <div class="testimonials">
             <span class="subheading">Отзывы</span>
@@ -391,7 +401,7 @@
             <div class="price-plan price-plan--break">
               <header class="plan-header">
                 <p class="plan-header__name">брейк тайм</p>
-                <p class="plan-header__price">&8381 7,000</p>
+                <p class="plan-header__price">&#8381 7,000</p>
                 <p class="plan-header__text">в месяц. это всего 235 в день.</p>
               </header>
               <ul class="list">
@@ -420,7 +430,7 @@
             <div class="price-plan price-plan--rest">
               <header class="plan-header">
                 <p class="plan-header__name">рест тайм</p>
-                <p class="plan-header__price">&8381 13,000</p>
+                <p class="plan-header__price">&#8381 13,000</p>
                 <p class="plan-header__text">в месяц. это всего 430 в день.</p>
               </header>
               <ul class="list">
@@ -586,5 +596,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script defer src="js/script.js"></script>
   </body>
 </html>

@@ -76,6 +76,7 @@ body {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 2.4rem;
 }
 
 .grid {
@@ -223,12 +224,13 @@ body {
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  padding: 2.4rem 4.8rem;
+  padding: 2rem 4rem;
   display: inline-block;
   border-radius: 9px;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1.6rem;
   transition: all .3s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
