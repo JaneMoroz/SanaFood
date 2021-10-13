@@ -1,14 +1,17 @@
 console.log("Hello!");
 
 // Make mobile navigation work
+const bodyEl = document.body;
 const btnNavEl = document.querySelector(".navigation__checkbox");
 const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("change", function () {
   if (btnNavEl.checked) {
     headerEl.classList.add("navigation-open");
+    bodyEl.classList.add("fixed-position");
   } else {
     headerEl.classList.remove("navigation-open");
+    bodyEl.classList.remove("fixed-position");
   }
 });
 

@@ -60,7 +60,7 @@
   }
 
   .meal {
-    height: 45rem;
+    height: auto;
   }
 
   .meal__side {
@@ -71,8 +71,27 @@
     padding: 1.2rem 2.4rem 3.2rem 2.4rem;
   }
 
+  .meal__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .meal:hover .meal__side--front {
+    transform: rotateY(0);
+  }
+
+  .meal__side--back {
+    transform: rotateY(0deg);
+    border-radius: 0 0 11px 11px;
+  }
+
   .meal__description {
     padding: 4.8rem 3.6rem 4.8rem 3.6rem;
+  }
+
+  .meal__title {
+    display: none;
   }
 
   .meal__about {
@@ -91,10 +110,6 @@
 
   .feature {
     width: 100%;
-  }
-
-  .cta {
-    padding: 3.2rem 4.8rem;
   }
 
   .cta-form {
@@ -160,16 +175,26 @@
     row-gap: 9.6rem;
   }
 
+  .testimonials-collection {
+    margin-right: 0;
+  }
+
   .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .video__content {
-    width: 130%;
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .cta {
-    width: 70%;
+  .diets {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+
+  .cta-form {
+    display: flex;
+    flex-direction: column;
   }
 
   .cta .heading-secondary {
@@ -197,9 +222,14 @@
 
   .navigation {
     position: absolute;
-    top: 200%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    margin-top: 10rem;
+    width: 100%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 2001;
 
     opacity: 0;
@@ -270,6 +300,10 @@
     color: #469b7d;
     background-color: #fff;
   }
+
+  .footer__navigation {
+    justify-self: stretch;
+  }
 }
 
 /* *********************************** */
@@ -321,14 +355,6 @@
     margin-bottom: 4.8rem;
   }
 
-  .meal {
-    height: 65rem;
-  }
-
-  .meal__side {
-    height: 65rem;
-  }
-
   .meal__description {
     padding: 12.8rem 6.4rem;
   }
@@ -340,6 +366,7 @@
   }
 
   .diets {
+    grid-column: auto;
     justify-self: center;
   }
 
@@ -365,8 +392,17 @@
     width: 140%;
   }
 
+  .cta-container {
+    padding: 0;
+  }
+
   .cta {
     width: 100%;
+  }
+
+  .cta-form {
+    display: flex;
+    flex-direction: column;
   }
 
   .footer-grid {
