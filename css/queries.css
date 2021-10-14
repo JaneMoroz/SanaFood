@@ -1,4 +1,53 @@
 /* *********************************** */
+/* NO HOVER*/
+/* *********************************** */
+
+@media only screen and (hover: none) {
+  /* MEALS */
+  .meal {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .meal__content {
+    padding: 1.2rem 2.4rem 3.2rem 2.4rem;
+  }
+
+  .meal__side {
+    height: 100%;
+    position: relative;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .meal:hover .meal__side--front {
+    transform: rotateY(0);
+  }
+
+  .meal__side--back {
+    transform: rotateY(0deg);
+    border-radius: 0 0 11px 11px;
+  }
+
+  .meal__description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.4rem 3.6rem 4.8rem 2.4rem;
+  }
+
+  .meal__title {
+    display: none;
+  }
+
+  .meal__about {
+    margin-bottom: 2.4rem;
+  }
+}
+
+/* *********************************** */
 /* BELOW 1344px (Smaller desktops)*/
 /* *********************************** */
 
@@ -15,9 +64,13 @@
     column-gap: 4.8rem;
   }
 
+  /* FEATURES */
+
   .features {
     padding: 6rem;
   }
+
+  /* FOOTER */
 
   .footer__list {
     gap: 3.8rem;
@@ -38,10 +91,6 @@
     column-gap: 3.2rem;
   }
 
-  .hero__img {
-    width: 100%;
-  }
-
   .btn:link,
   .btn:visited {
     padding: 1.2rem 2.4rem;
@@ -55,54 +104,26 @@
     font-size: 2.4rem;
   }
 
+  /* HERO */
+
+  .hero__img {
+    width: 100%;
+  }
+
+  /* HEADER */
+
   .navigation__list {
     gap: 3.2rem;
   }
 
-  .meal {
-    height: auto;
-  }
-
-  .meal__side {
-    height: 45rem;
-  }
-
-  .meal__content {
-    padding: 1.2rem 2.4rem 3.2rem 2.4rem;
-  }
-
-  .meal__side {
-    height: auto;
-    position: relative;
-    box-shadow: none;
-  }
-
-  .meal:hover .meal__side--front {
-    transform: rotateY(0);
-  }
-
-  .meal__side--back {
-    transform: rotateY(0deg);
-    border-radius: 0 0 11px 11px;
-  }
-
-  .meal__description {
-    padding: 4.8rem 3.6rem 4.8rem 3.6rem;
-  }
-
-  .meal__title {
-    display: none;
-  }
-
-  .meal__about {
-    margin-top: -1.8rem;
-    margin-bottom: 3.2rem;
-  }
+  /* PRICES */
 
   .price-plan {
     width: 90%;
     padding: 6.4rem 3.2rem 6.4rem 3.2rem;
   }
+
+  /* FEATURES */
 
   .features {
     padding: 6rem 3.2rem;
@@ -112,10 +133,14 @@
     width: 100%;
   }
 
+  /* CTA */
+
   .cta-form {
     column-gap: 6.4rem;
     row-gap: 3.2rem;
   }
+
+  /* FOOTER */
 
   .footer {
     margin-top: 6.4rem;
@@ -147,6 +172,8 @@
     font-size: 50%;
   }
 
+  /* HERO */
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -166,9 +193,13 @@
     margin: 4.8rem 0;
   }
 
+  /* STEPS */
+
   .step-text-box__number {
     font-size: 7.4rem;
   }
+
+  /* TESTIMONIALS */
 
   .testimonials-grid {
     grid-template-columns: 1fr;
@@ -179,6 +210,8 @@
     margin-right: 0;
   }
 
+  /* GALLERY */
+
   .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -187,10 +220,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* MEALS / DIETS */
+
   .diets {
     grid-column: 1 / span 2;
     justify-self: center;
   }
+
+  /* CTA */
 
   .cta-form {
     display: flex;
@@ -209,6 +246,8 @@
   .btn--form {
     margin-top: 1.2rem;
   }
+
+  /* FOOTER */
 
   .footer__list {
     display: grid;
@@ -307,6 +346,36 @@
 }
 
 /* *********************************** */
+/* BELOW 944px (Tablets) WITH HOVER*/
+/* *********************************** */
+
+@media (max-width: 59em) and (hover: hover) {
+
+  /* MEALS / DIETS */
+
+  .meal {
+    height: 60rem;
+  }
+
+  .meal__side {
+    height: 60rem;
+  }
+}
+
+/* *********************************** */
+/* BELOW 704px (Smaller Tablets)*/
+/* *********************************** */
+
+@media (max-width: 44em) {
+
+  /* FEATURES */
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* *********************************** */
 /* BELOW 544px (Phones)*/
 /* *********************************** */
 
@@ -327,6 +396,8 @@
     padding: 2.4rem 1.6rem;
   }
 
+  /* HERO */
+
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
   }
@@ -334,6 +405,8 @@
   .hero {
     padding: 0 3.2rem;
   }
+
+  /* STEPS */
 
   .section-how {
     padding: 9.6rem 0 0 0;
@@ -355,9 +428,7 @@
     margin-bottom: 4.8rem;
   }
 
-  .meal__description {
-    padding: 12.8rem 6.4rem;
-  }
+  /* MEALS */
 
   .meal__btn .btn:link,
   .meal__btn .btn:visited {
@@ -370,27 +441,39 @@
     justify-self: center;
   }
 
+  /* TESTIMONIALS */
+
   .testimonials {
     grid-template-columns: 1fr;
   }
+
+  /* GALLERY */
 
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
   }
 
+  /* PRICES */
+
   .price-plan {
     justify-self: center;
   }
 
+  /* FEATURES */
+
   .feature {
-    width: 50%;
+    width: 80%;
     justify-self: center;
   }
+
+  /* VIDEO */
 
   .video__content {
     width: 140%;
   }
+
+  /* CTA */
 
   .cta-container {
     padding: 0;
@@ -404,6 +487,8 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* FOOTER */
 
   .footer-grid {
     column-gap: 2.4rem;
