@@ -202,6 +202,7 @@
   column-gap: 6.4rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  height: 80vh;
 }
 
 .section-hero {
