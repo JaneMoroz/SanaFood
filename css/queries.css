@@ -175,6 +175,8 @@
   /* HERO */
 
   .hero {
+    height: 100%;
+    min-height: 100rem;
     grid-template-columns: 1fr;
     padding: 0 8rem;
   }
@@ -350,7 +352,6 @@
 /* *********************************** */
 
 @media (max-width: 59em) and (hover: hover) {
-
   /* MEALS / DIETS */
 
   .meal {
@@ -367,7 +368,6 @@
 /* *********************************** */
 
 @media (max-width: 44em) {
-
   /* FEATURES */
 
   .grid--4-cols {
