@@ -11,7 +11,6 @@ This project was created after completing [Jonas Schmedtmann's "Build Responsive
 - [x] CSS Animations
 - [x] Responsive Design
 - [x] The Hamburger Menu For Small Screen Devices
-- [x] Local Storage
 
 ## 💻📱 Preview:
 ### Navigation and Hero Sections
