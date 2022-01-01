@@ -1,5 +1,5 @@
 # 🍴 SanaFood
-An website for ordering food
+A website for ordering food
 
 ## ℹ General info:
 This project was created after completing [Jonas Schmedtmann's "Build Responsive Real-World Websites with HTML and CSS" course](https://github.com/jonasschmedtmann/html-css-course)
